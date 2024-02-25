@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary px-4">
+  <div class="container-fluid">
+    <!-- Logo/Brand -->
+     <%= link_to "Members Only", root_path, class: "navbar-brand" %>
+
+    <!-- Navbar Toggler Button (for mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <%= link_to "Sign Up", new_user_registration_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Log In", new_user_session_path, class: "nav-link active" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
