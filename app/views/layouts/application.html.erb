@@ -13,9 +13,22 @@
   <body>
     <%= render 'layouts/navbar' %>
     <div class="container">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+      <% if notice.present? %>
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <%= notice %>
+      </div>
+      <% end %>
+      <% if alert.present? %>
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <%= alert %>
+      </div>
+      <% end %>
       <%= yield %>
+      <br><br><br>
+      <div class="container">
+        <%= debug(params) if Rails.env.development? %>
+      </div>
+      <br><br><br>
     </div>
   </body>
 </html>

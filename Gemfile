@@ -14,6 +14,7 @@ gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]
 gem "bootsnap", require: false
 gem 'dartsass-sprockets'
 gem 'bootstrap', '~> 5.1', '>= 5.1.3'
+gem "responders"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
