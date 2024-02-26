@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+ .top {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+ }
+
+ .no-link-style {
+  text-decoration: none;
+  color: inherit; /* Use the same color as the surrounding text */
+}
+
+.no-link-style:hover {
+  text-decoration: none;
+  color: inherit; /* Use the same color as the surrounding text */
+}
+
+.card:hover {
+  opacity: 0.75; /* Adjust the opacity as desired */
+  color: inherit;
+}

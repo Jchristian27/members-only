@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     registration: 'register', 
     sign_up: 'signup' 
   }
+  resources :posts
   
   get "up" => "rails/health#show", as: :rails_health_check
 end

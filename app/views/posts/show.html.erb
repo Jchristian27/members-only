@@ -1,0 +1,9 @@
+<div class="container-fluid hero">
+  <div class="row">
+    <h1><%= @post.title %></h1>
+    <p><%= @post.content %></p>
+    <% if user_signed_in? %>
+      <p><%= @post.user.name %></p>
+    <% end %>
+  </div>
+</div>
